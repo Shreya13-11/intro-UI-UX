@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start gap-2">
           <span className="font-display font-bold text-xl tracking-tight">Shreya</span>
           <p className="text-xs text-text-secondary">shreya.phy1@gmail.com</p>
-          <p className="text-xs text-text-secondary">(+91) 8789660911</p>
+          {/* <p className="text-xs text-text-secondary">(+91) 8789660911</p> */}
         </div>
 
         <p className="text-text-secondary text-sm">
