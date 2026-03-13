@@ -60,15 +60,15 @@ export default function Contact() {
                   <p className="font-bold">Shreya.phy1@gmail.com</p>
                 </div>
               </div>
-              {/* <div className="flex items-center gap-4 group">
+              { { <div className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-accent-purple group-hover:bg-accent-purple group-hover:text-white transition-all">
                   <Phone size={24} />
                 </div>
                 <div>
                   <p className="text-xs text-text-secondary font-poppins-light font-light uppercase tracking-widest">Call Me</p>
                   <p className="font-bold">(+91) 8789660911</p>
-                </div> */}
-              </div>
+                </div> }
+              </div> }
               <div className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-all">
                   <Globe size={24} />
