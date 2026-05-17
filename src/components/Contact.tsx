@@ -82,9 +82,9 @@ export default function Contact() {
 
             <div className="mt-12 flex gap-4">
               {[
-                { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/shreya" },
-                { icon: <Globe size={20} />, href: "https://shreya.design" },
-                { icon: <Send size={20} />, href: "mailto:shreya.phy1@gmail.com" },
+                { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/shreya-a291ba325" },
+            
+                { icon: <Send size={20} />, href: "mailto:shreya.mk.mrc@gmail.com" },
               ].map((social, i) => (
                 <a 
                   key={i}
