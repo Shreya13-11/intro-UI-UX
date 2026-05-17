@@ -310,136 +310,129 @@ export default function CaseStudy() {
             </div>
           </section>
 
-          {/* Design System */}
-          <section>
-            <h2 className="text-3xl font-bold mb-12">
-              Design System
-            </h2>
+{/* Design System */}
+<section>
+  <h2 className="text-3xl font-bold mb-12">
+    Design System
+  </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-              {/* Color Palette */}
-              <div>
-                <h3 className="text-xl font-bold mb-6">
-                  Color Palette
-                </h3>
+    {/* Color Palette */}
+    <div>
+      <h3 className="text-xl font-bold mb-6">
+        Color Palette
+      </h3>
 
-                <div className="space-y-4">
+      <div className="space-y-4">
 
-                  {[
-                    {
-                      name: 'Secondary Color',
-                      hex: '#22C55E',
-                      desc: 'Healthy highlights and success states'
-                    },
+        {[
+          {
+            name: 'Primary Color',
+            hex: '#18A999',
+            desc: 'Main interface and branding color'
+          },
 
-                    {
-                      name: 'Primary Color',
-                      hex: '#14B8A6',
-                      desc: 'Main interface and branding color'
-                    },
+          {
+            name: 'Secondary Color',
+            hex: '#22C55E',
+            desc: 'Healthy highlights and success states'
+          },
 
-                    {
-                      name: 'Accent Color',
-                      hex: '#FB923C',
-                      desc: 'CTA buttons and important actions'
-                    },
+          {
+            name: 'Accent Color',
+            hex: '#FB923C',
+            desc: 'CTA buttons and important actions'
+          },
 
-                    {
-                      name: 'Background',
-                      hex: '#FFFFFF',
-                      desc: 'Clean and minimal interface balance'
-                    },
+          {
+            name: 'Background',
+            hex: '#F8F9FA',
+            desc: 'Clean and minimal interface balance'
+          }
 
-                    {
-                      name: 'Text Color',
-                      hex: '#64748B',
-                      desc: 'Secondary text and descriptions'
-                    }
+        ].map((color, i) => (
+          <div
+            key={i}
+            className="flex items-center gap-4"
+          >
 
-                  ].map((color, i) => (
-                    <div
-                      key={i}
-                      className="flex items-center gap-4"
-                    >
+            <div
+              className="w-12 h-12 rounded-full border border-white/10"
+              style={{ backgroundColor: color.hex }}
+            />
 
-                      <div
-                        className="w-12 h-12 rounded-full border border-white/10"
-                        style={{ backgroundColor: color.hex }}
-                      />
+            <div>
+              <p className="font-bold text-sm">
+                {color.name}
+              </p>
 
-                      <div>
-                        <p className="font-bold text-sm">
-                          {color.name}
-                        </p>
-
-                        <p className="text-xs text-text-secondary">
-                          {color.hex} • {color.desc}
-                        </p>
-                      </div>
-
-                    </div>
-                  ))}
-
-                </div>
-              </div>
-
-              {/* Typography */}
-              <div>
-                <h3 className="text-xl font-bold mb-6">
-                  Typography
-                </h3>
-
-                <div className="space-y-6">
-
-                  <div>
-                    <p className="text-xs uppercase tracking-widest text-accent-blue mb-2">
-                      Display / Heading
-                    </p>
-
-                    <h3 className="text-4xl font-bold">
-                      Poppins Bold
-                    </h3>
-
-                    <p className="text-text-secondary text-sm mt-2">
-                      Used for major headings and hero titles.
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-xs uppercase tracking-widest text-accent-blue mb-2">
-                      Body Text
-                    </p>
-
-                    <p className="text-lg">
-                      Inter Regular
-                    </p>
-
-                    <p className="text-text-secondary text-sm mt-2">
-                      Optimized for readability and clean UI content.
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-xs uppercase tracking-widest text-accent-blue mb-2">
-                      Buttons & Labels
-                    </p>
-
-                    <p className="font-semibold">
-                      Inter Medium
-                    </p>
-
-                    <p className="text-text-secondary text-sm mt-2">
-                      Used for buttons, captions, and labels.
-                    </p>
-                  </div>
-
-                </div>
-              </div>
-
+              <p className="text-xs text-text-secondary">
+                {color.hex} • {color.desc}
+              </p>
             </div>
-          </section>
 
+          </div>
+        ))}
+
+      </div>
+    </div>
+
+    {/* Typography */}
+    <div>
+      <h3 className="text-xl font-bold mb-6">
+        Typography
+      </h3>
+
+      <div className="space-y-6">
+
+        <div>
+          <p className="text-xs uppercase tracking-widest text-accent-blue mb-2">
+            Display / Heading
+          </p>
+
+          <h3 className="text-4xl font-bold">
+            Poppins Bold
+          </h3>
+
+          <p className="text-text-secondary text-sm mt-2">
+            Used for major headings and hero titles.
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs uppercase tracking-widest text-accent-blue mb-2">
+            Body Text
+          </p>
+
+          <p className="text-lg">
+            Inter Regular
+          </p>
+
+          <p className="text-text-secondary text-sm mt-2">
+            Optimized for readability and clean UI content.
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs uppercase tracking-widest text-accent-blue mb-2">
+            Buttons & Labels
+          </p>
+
+          <p className="font-semibold">
+            Inter Medium
+          </p>
+
+          <p className="text-text-secondary text-sm mt-2">
+            Used for buttons, captions, and labels.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
           {/* Conclusion */}
           <section className="bg-gradient-to-br from-accent-blue/10 to-accent-purple/10 p-12 rounded-3xl text-center border border-white/10">
             <h2 className="text-3xl font-bold mb-6">
