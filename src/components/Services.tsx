@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ExternalLink, Layout, Smartphone, Search, RefreshCcw, Globe } from 'lucide-react';
+import { Layout, Smartphone, RefreshCcw } from 'lucide-react';
 
 const services = [
   {
@@ -49,13 +49,12 @@ export default function Services() {
             <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               {service.icon}
             </div>
+
             <h3 className="text-xl font-bold mb-4">{service.title}</h3>
-            <p className="text-sm text-text-secondary mb-8 leading-relaxed">
+
+            <p className="text-sm text-text-secondary leading-relaxed">
               {service.desc}
             </p>
-            <button className="mt-auto flex items-center gap-2 text-sm font-bold hover:text-accent-blue transition-colors">
-              Let's Work <ExternalLink size={14} />
-            </button>
           </motion.div>
         ))}
       </div>
